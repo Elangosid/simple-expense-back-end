@@ -11,7 +11,7 @@ connectDB();
 const app = express();
 app.use(
   cors({
-    origin: "https://simple-expense-tracker-fe.vercel.app",
+    origin: "https://simple-expense-tracker-fe.vercel.app " || "http://localhost:5173",
     credentials: true,
   })
 );
