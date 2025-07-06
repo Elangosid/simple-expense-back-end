@@ -20,7 +20,7 @@ app.use('/downloads', express.static('downloads'));
 app.use('/api/expenses', csvExcel);
 app.use('/api/expenses', expenseRoutes);
 
-app.get('/api/hello', (req, res) => {
+app.get('/', (req, res) => {
   console.log('Hello API hit');
   res.json({ message: 'Hello, Node!' });
 });
